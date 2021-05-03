@@ -1,22 +1,22 @@
 {% extends "layout.njk" %}
 
 {% block head %}
-  <title>Sobre - Hilton Ribeiro</title>
+  <title>Sobre - {{about.name}}</title>
 {% endblock %}
 
 {% block content %}
 
 <div id="wrapper">
-  <img src="https://avatars.githubusercontent.com/u/48803031?v=4" alt="Hilton Ribeiro">
-  <h1>Hilton Ribeiro</h1>
-  <h2>Aluno - Rocketseat</h2>
-  <p>Programador back-end, focado em NodeJS. Aluno da <a href="https://rocketseat.com.br/" target="_blank">Rocketseat</a></p>
+  <img src="{{about.avatar_url}}" alt="Imagem de {{about.name}}">
+  <h1>{{about.name}}</h1>
+  <h2>{{about.role}}</h2>
+  <p>{{about.description}}</p>
 </div>
 
 <div id="links-footer" class="links">
-  <a href="https://github.com/Hilton1" target="_blank">Github</a>
-  <a href="https://twitter.com/jhiltonr1" target="_blank">Twitter</a>
-  <a href="https://www.linkedin.com/in/jhiltonribeiro/" target="_blank">LinkedIn</a>
+  {% for link in about.link %}
+    <a href="{{link.url}}" target="_blank">{{link.name}}</a>
+  {% endfor %}
 </div>
 
 {% endblock %}
