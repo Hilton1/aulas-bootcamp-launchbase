@@ -1,6 +1,7 @@
 {% extends "layout.njk" %}
 
 {% block head %}
+<<<<<<< HEAD
   <title>Sobre - Hilton Ribeiro</title>
 {% endblock %}
 
@@ -17,4 +18,24 @@
       <a href="{{link.url}}" target="_blank">{{link.name}}</a>
     {% endfor %}
   </div>
+=======
+  <title>Sobre - {{about.name}}</title>
+{% endblock %}
+
+{% block content %}
+
+<div id="wrapper">
+  <img src="{{about.avatar_url}}" alt="Imagem de {{about.name}}">
+  <h1>{{about.name}}</h1>
+  <h2>{{about.role}}</h2>
+  <p>{{about.description}}</p>
+</div>
+
+<div id="links-footer" class="links">
+  {% for link in about.link %}
+    <a href="{{link.url}}" target="_blank">{{link.name}}</a>
+  {% endfor %}
+</div>
+
+>>>>>>> 2257f710e5d538228cfe135063fd8b9e4d1f5d4b
 {% endblock %}

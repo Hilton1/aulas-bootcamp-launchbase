@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "iniciando_no_backend",
+=======
+  "name": "Iniciando_no_BackEnd",
+>>>>>>> 2257f710e5d538228cfe135063fd8b9e4d1f5d4b
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
@@ -10,6 +14,10 @@
     "nunjucks": "^3.2.3"
   },
   "devDependencies": {
+<<<<<<< HEAD
     "nodemon": "^2.0.12"
+=======
+    "nodemon": "^2.0.7"
+>>>>>>> 2257f710e5d538228cfe135063fd8b9e4d1f5d4b
   }
 }
