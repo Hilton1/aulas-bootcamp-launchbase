@@ -11,6 +11,11 @@
     "express": "^4.17.1",
     "nunjucks": "^3.2.3"
   },
+  "nodemonConfig": {
+    "ignore": [
+      "data.json"
+    ]
+  },
   "devDependencies": {
     "browser-sync": "^2.27.5",
     "nodemon": "^2.0.12",
