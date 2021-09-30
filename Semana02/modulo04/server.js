@@ -6,7 +6,7 @@ const server = express();
 
 // Configura arquivos estáticos (css, js...)
 server.use(express.static('public'));
-
+server.use(express.urlencoded({ extended: true }))
 server.use(routes);
 
 // Configura as views
