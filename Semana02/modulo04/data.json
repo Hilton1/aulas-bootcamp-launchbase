@@ -1,9 +1,9 @@
 {
   "instructors": [
     {
-      "id": 1,
+      "id": "1",
       "avatar_url": "https://i.redd.it/ohexbvttb0s41.jpg",
-      "name": "Cleiton Rasta",
+      "name": "Cleiton Rasta, o pica",
       "birth": 1021075200000,
       "gender": "M",
       "services": "Toco Reggae, Dou pedrada",
